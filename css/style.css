@@ -33,12 +33,18 @@ body {
 }
 
 .header-content {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0;
   padding: 1.2rem 2rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-left: auto;
 }
 
 .logo {
@@ -48,6 +54,7 @@ body {
   color: #1e3c72;
   position: relative;
   padding-bottom: 5px;
+  flex-shrink: 0;
 }
 
 .logo::after {
@@ -99,6 +106,78 @@ body {
 
 .nav a:hover::before {
   width: 70%;
+}
+
+/* Header Contact Section */
+.header-contact {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.6rem;
+}
+
+.header-contact-item {
+  min-width: 110px;
+  height: 42px;
+  padding: 0 1.2rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 2px solid transparent;
+}
+
+.whatsapp-btn {
+  background: rgba(30, 60, 114, 0.08);
+  color: #1e3c72;
+}
+
+.whatsapp-btn:hover {
+  background: #25d366;
+  color: white;
+  border-color: #25d366;
+}
+
+.whatsapp-btn i {
+  font-size: 1.2rem;
+}
+
+.phone-btn {
+  background: rgba(30, 60, 114, 0.08);
+  color: #1e3c72;
+}
+
+.phone-btn:hover {
+  background: #1e3c72;
+  color: white;
+  border-color: #1e3c72;
+}
+
+.phone-btn i {
+  font-size: 1.1rem;
+}
+
+.header-location {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem;
+  margin-right: 0;
+  background: rgba(30, 60, 114, 0.08);
+  border-radius: 8px;
+  color: #1e3c72;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.header-location i {
+  color: #1e3c72;
+  font-size: 1rem;
 }
 
 /* Hero Slider Section */
@@ -609,8 +688,51 @@ body {
     font-size: 1.5rem;
   }
 
+  .header-right {
+    gap: 1rem;
+  }
+
   .nav {
     display: none;
+  }
+
+  .header-location {
+    margin-right: 0;
+  }
+
+  .header-contact {
+    gap: 0.5rem;
+  }
+
+  .header-contact-item {
+    min-width: 95px;
+    height: 38px;
+    padding: 0 1rem;
+    font-size: 0.9rem;
+  }
+
+  .header-contact-item span {
+    display: none;
+  }
+
+  .header-contact-item {
+    min-width: auto;
+    width: 38px;
+    padding: 0;
+  }
+
+  .whatsapp-btn i,
+  .phone-btn i {
+    font-size: 1.1rem;
+  }
+
+  .header-location {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .header-location i {
+    font-size: 0.9rem;
   }
 
   .section-title {
@@ -723,6 +845,40 @@ body {
 }
 
 @media (max-width: 480px) {
+  /* Header mobile */
+  .header-location {
+    margin-right: 0;
+  }
+
+  .header-contact {
+    gap: 0.4rem;
+  }
+
+  .header-contact-item span {
+    display: none;
+  }
+
+  .header-contact-item {
+    min-width: auto;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+  }
+
+  .whatsapp-btn i,
+  .phone-btn i {
+    font-size: 1.05rem;
+  }
+
+  .header-location {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .header-location i {
+    font-size: 0.85rem;
+  }
+
   /* Hero Slider mobile */
   .hero-slider {
     height: 60vh;

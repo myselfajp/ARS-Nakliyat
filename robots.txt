@@ -1,0 +1,19 @@
+# Robots.txt for ARS Nakliye
+# https://www.arsnakliye.com/robots.txt
+
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+
+Disallow: /save_images.py
+Disallow: /optimize_images.py
+Disallow: /*.py$
+
+# Sitemap location
+Sitemap: https://www.arsnakliye.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+

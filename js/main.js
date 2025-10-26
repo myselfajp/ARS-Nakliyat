@@ -59,7 +59,7 @@ function toggleMobileMenu() {
 }
 
 // Console info
-console.log('ARS Nakli Website - Developed with care');
+console.log('ARS Nakliye Website - Developed with care');
 
 // ==========================================
 // Hero Slider Functionality
