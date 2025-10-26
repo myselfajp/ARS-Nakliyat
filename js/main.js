@@ -19,12 +19,11 @@ const header = document.querySelector('.header');
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
-    if (currentScroll > 100) {
-        header.style.padding = '0.5rem 0';
-        header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.2)';
+    // Add scrolled class when scrolling
+    if (currentScroll > 50) {
+        header.classList.add('scrolled');
     } else {
-        header.style.padding = '1rem 0';
-        header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+        header.classList.remove('scrolled');
     }
 
     lastScroll = currentScroll;

@@ -10,6 +10,12 @@
     <meta name="keywords"
         content="istanbul nakliyat, depo hizmetleri, ev taşıma, ofis taşıma, güvenilir nakliyat, ARS Nakli">
 
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -165,20 +171,6 @@
                 <h3>Uygun Fiyat</h3>
                 <p>Kaliteden ödün vermeden en uygun fiyat garantisi sunuyoruz.</p>
             </div>
-            <div class="trust-item">
-                <div class="trust-icon-wrapper">
-                    <i class="fas fa-headset"></i>
-                </div>
-                <h3>7/24 Destek</h3>
-                <p>Her an ulaşabileceğiniz müşteri hizmetleri desteği.</p>
-            </div>
-            <div class="trust-item">
-                <div class="trust-icon-wrapper">
-                    <i class="fas fa-star"></i>
-                </div>
-                <h3>Memnun Müşteriler</h3>
-                <p>Binlerce mutlu müşterimizin referansı ile çalışıyoruz.</p>
-            </div>
         </div>
     </section>
 
@@ -214,34 +206,46 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="section contact-section" id="iletisim" itemscope itemtype="http://schema.org/LocalBusiness">
+    <section class="contact-section" id="iletisim" itemscope itemtype="http://schema.org/LocalBusiness">
         <meta itemprop="name" content="ARS Nakli">
         <meta itemprop="description" content="İstanbul nakliyat ve depo hizmetleri">
-        <h2 class="section-title" style="color: white;">Bize Ulaşın</h2>
-        <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">
-            Ücretsiz keşif ve fiyat teklifi için hemen bizi arayın!
-        </p>
-        <div class="contact-info">
-            <div class="contact-item" itemprop="telephone">
-                <i class="fas fa-phone"></i>
-                <h3>Telefon</h3>
-                <a href="tel:+905XXXXXXXXX">0 (5XX) XXX XX XX</a>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-whatsapp"></i>
-                <h3>WhatsApp</h3>
-                <a href="https://wa.me/905XXXXXXXXX">WhatsApp'tan Yaz</a>
-            </div>
-            <div class="contact-item" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <i class="fas fa-map-marker-alt"></i>
-                <h3>Adres</h3>
-                <p itemprop="addressLocality">İstanbul</p>
-                <p itemprop="addressCountry">Türkiye</p>
-            </div>
-            <div class="contact-item" itemprop="email">
-                <i class="fas fa-envelope"></i>
-                <h3>E-posta</h3>
-                <a href="mailto:info@arsnakli.com">info@arsnakli.com</a>
+        <div class="contact-container">
+            <h2 class="section-title" style="color: white;">Bize Ulaşın</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem; color: white;">
+                Ücretsiz keşif ve fiyat teklifi için hemen bizi arayın!
+            </p>
+            <div class="contact-info">
+                <div class="contact-item" itemprop="telephone">
+                    <div class="contact-icon phone-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Telefon</h3>
+                    <a href="tel:+905525707128">+90 552 570 7128</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon whatsapp-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <a href="https://wa.me/905525707128" target="_blank" rel="noopener">Mesaj Gönder</a>
+                </div>
+                <div class="contact-item" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <div class="contact-icon location-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Adres</h3>
+                    <p class="address-text">
+                        <span itemprop="addressLocality">Üsküdar</span>, <span itemprop="addressRegion">İstanbul</span>
+                    </p>
+                    <p class="address-country" itemprop="addressCountry">Türkiye</p>
+                </div>
+                <div class="contact-item" itemprop="email">
+                    <div class="contact-icon email-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-posta</h3>
+                    <a href="mailto:myjaliliparsa@gmail.com" class="email-link">myjaliliparsa@gmail.com</a>
+                </div>
             </div>
         </div>
     </section>
@@ -259,10 +263,12 @@
       "@type": "LocalBusiness",
       "name": "ARS Nakli",
       "description": "İstanbul'da profesyonel nakliyat ve depo hizmetleri",
-      "telephone": "+905XXXXXXXXX",
+      "telephone": "+905525707128",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "İstanbul",
+        "streetAddress": "Selimiye Mahallesi Selimiye İskele Caddesi No:47/9",
+        "addressLocality": "Üsküdar",
+        "addressRegion": "İstanbul",
         "addressCountry": "TR"
       },
       "geo": {
