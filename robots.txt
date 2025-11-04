@@ -1,4 +1,4 @@
-# Robots.txt for ARS Nakliye
+# Robots.txt for EV-DEV Nakliyat
 # https://www.arsnakliye.com/robots.txt
 
 User-agent: *
@@ -16,4 +16,3 @@ Sitemap: https://www.arsnakliye.com/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
-

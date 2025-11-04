@@ -59,7 +59,7 @@ function toggleMobileMenu() {
 }
 
 // Console info
-console.log('ARS Nakliye Website - Developed with care');
+console.log('EV-DEV Nakliyat Website - Developed with care');
 
 // ==========================================
 // Hero Slider Functionality
@@ -144,4 +144,3 @@ document.addEventListener('keydown', function (event) {
         changeHeroSlide(1);
     }
 });
-
